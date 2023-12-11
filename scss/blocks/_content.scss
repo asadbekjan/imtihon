@@ -1,0 +1,158 @@
+.content {
+  padding-top: 100px;
+  display: flex;
+
+  &__hr {
+    width: 50px;
+    height: 4px;
+    flex-shrink: 0;
+    background-color: #f67e7e;
+  }
+
+  &__right--head {
+    margin-left: 95px;
+    color: #fff;
+    font-family: Livvic;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    width: 445px;
+  }
+
+  &__list--item {
+    display: flex;
+    margin-left: 35px;
+  }
+
+  &__item {
+    flex-direction: column;
+  }
+
+  &__img {
+    margin-right: 25px;
+    width: 72px;
+    margin-top: 30px;
+    height: 72px;
+  }
+
+  &__item--head {
+    width: 445px;
+    color: #f67e7e;
+    font-family: Livvic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  &__item--text {
+    width: 445px;
+    color: #fff;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+  }
+}
+
+// tablet
+
+@media only screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+
+    &__hr {
+      margin-right: 580px;
+    }
+
+    &__right--head {
+      color: #fff;
+      font-family: Livvic;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      width: 445px;
+    }
+
+    &__item--head {
+      color: #f67e7e;
+      width: 478px;
+      font-family: Livvic;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+    }
+
+    &__item--text {
+      width: 478px;
+      color: #fff;
+      font-family: Livvic;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 25px;
+      opacity: 0.8;
+    }
+
+    &__list {
+      margin-left: 30px;
+    }
+  }
+}
+
+//mobil
+
+@media only screen and (max-width: 376px) {
+  .content {
+    flex-direction: column;
+
+    &__right--head {
+      color: #fff;
+      font-family: Livvic;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      width: 240px;
+    }
+
+    &__img {
+      margin-left: 125px;
+    }
+
+    &__list--item {
+      flex-direction: column;
+    }
+
+    &__list {
+      margin-left: -35px;
+    }
+
+    &__item--head {
+      width: 327px;
+      color: #f67e7e;
+      text-align: center;
+      font-family: Livvic;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+    }
+
+    &__item--text {
+      margin-right: 0;
+      color: #fff;
+      text-align: center;
+      font-family: Livvic;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 25px;
+      width: 327px;
+    }
+  }
+}

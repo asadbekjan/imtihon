@@ -1,0 +1,159 @@
+.footer__section {
+  background: #002529;
+}
+
+.footer {
+  padding-top: 50px;
+  width: 1440px;
+  flex-shrink: 0;
+}
+
+.control {
+  display: flex;
+}
+
+.box {
+  &__logo {
+    width: 160px;
+    height: 40px;
+  }
+
+  &__list {
+    display: flex;
+    margin-left: -35px;
+  }
+
+  &__item {
+    list-style: none;
+    margin-right: 20px;
+  }
+
+  &__item--link {
+    @include link();
+    font-family: Livvic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}
+
+.grit {
+  margin-left: 150px;
+  margin-bottom: 0;
+
+  &__text {
+    color: #fff;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    width: 445px;
+    opacity: 0.6;
+  }
+}
+
+.inner {
+  margin-left: 450px;
+  margin-top: 60px;
+
+  &__logo {
+    margin-left: 160px;
+    width: 104px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    width: 255px;
+    color: #fff;
+    text-align: right;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+  }
+}
+
+//tablet
+
+@media only screen and (max-width: 768px) {
+  .grit__text {
+    text-align: right;
+    margin-left: -50px;
+  }
+
+  .inner {
+    display: flex;
+
+    &__item {
+      margin-left: 5px;
+    }
+
+    &__logo {
+      margin-top: 75px;
+    }
+
+    &__text {
+      margin-left: -750px;
+    }
+  }
+}
+
+//mobil
+
+@media only screen and (max-width: 376px) {
+  .control {
+    flex-direction: column;
+  }
+
+  .box {
+    &__logo {
+      width: 96px;
+      height: 24px;
+      margin-left: 110px;
+      flex-shrink: 0;
+    }
+
+    &__list {
+      margin-left: -75px;
+    }
+
+    &__item {
+      margin-left: 0;
+    }
+
+    &__item--link {
+      margin-left: 85px;
+    }
+  }
+
+  .grit {
+    &__text {
+      width: 327px;
+      color: #fff;
+      text-align: right;
+      font-family: Livvic;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 25px;
+      text-align: center;
+      margin-left: -150px;
+    }
+  }
+
+  .inner {
+    &__item {
+      margin-left: 335px;
+      margin-top: -120px;
+    }
+
+    &__logo {
+      margin-left: -670px;
+    }
+  }
+}

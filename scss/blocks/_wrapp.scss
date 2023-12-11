@@ -1,0 +1,171 @@
+.wrapp {
+  padding-top: 150px;
+
+  &__img {
+    margin-left: 140px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__head {
+    margin-left: 180px;
+    width: 932px;
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  &__text {
+    transform: translateY(-35px);
+    width: 350px;
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  &__item {
+    margin-left: 45px;
+  }
+
+  &__span {
+    display: block;
+    color: #79c8c7;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    width: 350px;
+  }
+
+  &__italik {
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px; /* 138.462% */
+    width: 350px;
+  }
+
+  &__list--img {
+    margin-left: 150px;
+    width: 62px;
+    height: 62px;
+    border-radius: 62px;
+    border: 2px solid #c4fffe;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  }
+}
+
+//tablet
+
+@media only screen and (max-width: 768px) {
+  .wrapp {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__img {
+      margin-left: 250px;
+    }
+
+    &__head {
+      width: 573px;
+      color: #fff;
+      text-align: center;
+      font-family: Livvic;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      margin-left: 55px;
+      line-height: 32px; /* 100% */
+    }
+
+    &__item--bottom {
+      margin-left: 115px;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      width: 573px;
+      color: #fff;
+      text-align: center;
+      font-family: Livvic;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 25px; /* 166.667% */
+    }
+
+    &__italik {
+      width: 350px;
+      color: #fff;
+      text-align: center;
+      font-family: Livvic;
+      font-size: 13px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 18px; /* 138.462% */
+    }
+  }
+}
+
+// mobil
+
+@media only screen and (max-width: 375px) {
+  .wrapp {
+    &__head {
+      margin-left: -5px;
+      color: #fff;
+      text-align: center;
+      font-family: Livvic;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      width: 327px;
+    }
+
+    &__img {
+      margin-left: 120px;
+    }
+
+    &__item--bottom {
+      margin-bottom: 50px;
+      margin-left: -5px;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-left: -8px;
+      margin-top: 20px;
+    }
+
+    &__text {
+      color: #fff;
+      text-align: center;
+      font-family: Livvic;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 25px;
+      width: 327px;
+    }
+  }
+}
